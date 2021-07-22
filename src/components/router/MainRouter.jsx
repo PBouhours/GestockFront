@@ -21,7 +21,11 @@ function MainRouter() {
             <ProductList />
           </Route>
           <Route exact path="/stock/:id" component={ProductDetails} />
-          <Route exact path="/stock/search/:query" component={ProductSearch} />
+          <Route
+            exact
+            path="/stock/recherche/:query"
+            component={ProductSearch}
+          />
         </Switch>
         <Route exact path="/creation-produit">
           <ProductCreate />

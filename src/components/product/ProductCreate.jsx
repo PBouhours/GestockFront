@@ -44,7 +44,7 @@ function ProductCreate() {
   return (
     <MainLayout>
       <div className="flex flex-col items-center font-serif bg-blue-100 h-screen">
-        <h1 className="text-5xl mt-8 mb-8">Nouveau produit</h1>
+        <h1 className="text-4xl mt-8 mb-8">Ajoutez un produit</h1>
         <div className="flex flex-col justify-around items-center bg-gradient-to-r from-blue-300 to-blue-100 w-72 h-96 mt-8 ring-4 ring-pink-200 rounded-2xl">
           <input
             type="text"

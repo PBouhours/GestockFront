@@ -125,14 +125,14 @@ function ProductDetails(props) {
             className="ring-4 ring-pink-300 bg-pink-200 rounded-md w-20"
             onClick={updateProduct}
           >
-            modifier
+            Modifier
           </button>
           <button
             type="button"
             className="ring-4 ring-pink-300 bg-pink-200 rounded-md w-20"
             onClick={deleteProduct}
           >
-            supprimer
+            Supprimer
           </button>
         </div>
       </div>

@@ -43,13 +43,13 @@ function Login() {
         <input
           type="text"
           className="h-10 w-52 ring-4 ring-pink-200 rounded-md"
-          placeholder="Username"
+          placeholder="Identifiant"
           onChange={(e) => setUsername(e.target.value)}
         />
         <input
           type="password"
           className="h-10 w-52 ring-4 ring-pink-200 rounded-md"
-          placeholder="Password"
+          placeholder="Mot de Passe"
           onChange={(e) => setPassword(e.target.value)}
         />
         <button
@@ -61,6 +61,7 @@ function Login() {
         </button>
         <Link to="/compte-creation">Créer un compte</Link>
       </div>
+      <p>©2021 Paul Bouhours, tous droits réservés.</p>
     </div>
   );
 }

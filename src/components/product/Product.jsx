@@ -8,7 +8,7 @@ function Product({ reference, name, size, gender, quantity, id }) {
         <h2 className="text-3xl font-serif">{name}</h2>
         <div className=" flex flex-col justify-between text-xl font-serif">
           <h3>ref: {reference}</h3>
-          <h3>size: {size}</h3>
+          <h3>Taille: {size}</h3>
           <h3>Sexe: {gender}</h3>
         </div>
 

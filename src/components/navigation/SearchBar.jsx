@@ -11,7 +11,7 @@ function SearchBar({ toggleBurger }) {
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    history.push(`/stock/search/${query}`);
+    history.push(`/stock/recherche/${query}`);
     setQuery('');
     toggleBurger();
   };
