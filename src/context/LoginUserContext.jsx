@@ -2,9 +2,11 @@
 import React, { createContext, useState } from 'react';
 
 export const LoginContext = createContext();
+
 function LoginUserContext({ children }) {
   const [userId, updateUserId] = useState();
   const [loginStatus, updateLoginStatus] = useState(false);
+
   return (
     <LoginContext.Provider
       value={{
