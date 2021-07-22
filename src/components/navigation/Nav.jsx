@@ -1,5 +1,6 @@
 import { Squash as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import MenuBurger from './MenuBurger';
 import SearchBar from './SearchBar';
 
@@ -13,9 +14,11 @@ function Nav() {
   return (
     <>
       <div className="bg-blue-400 flex justify-between items-center h-16 font-serif">
-        <h1 className="text-xl bg-gradient-to-r from-pink-400 to-pink-100 ml-1 p-0.5 rounded-xl ">
-          GeStock
-        </h1>
+        <Link to="/stock">
+          <h1 className="text-xl bg-gradient-to-r from-pink-400 to-pink-100 ml-1 p-0.5 rounded-xl ">
+            GeStock
+          </h1>
+        </Link>
         <SearchBar toggleBurger={toggleBurger} />
         <button type="button" onClick={toggleBurger}>
           <Hamburger color="white" />
