@@ -1,12 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import AlertTemplate from 'react-alert-template-basic';
+import { transitions, positions, Provider as AlertProvider } from 'react-alert';
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import LoginUserContext from './context/LoginUserContext';
+
+const options = {
+  position: positions.BOTTOM_RIGHT,
+  timeout: 2000,
+  offset: '30px',
+  transition: transitions.SCALE,
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <LoginUserContext>
+      <AlertProvider template={AlertTemplate} {...options}>
+        <App />
+      </AlertProvider>
+    </LoginUserContext>
   </React.StrictMode>,
   document.getElementById('root')
 );

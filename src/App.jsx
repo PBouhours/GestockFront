@@ -1,9 +1,32 @@
-import RemoveMe from './components/RemoveMe';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import CreateLogin from './components/accueuil/CreateLogin';
+import Login from './components/accueuil/Login';
+import ProductCreate from './components/product/ProductCreate';
+import ProductDetails from './components/product/ProductDetails';
+import ProductList from './components/product/ProductList';
+import ProductSearch from './components/product/ProductSearch';
 
 function App() {
   return (
     <div className="App">
-      <RemoveMe />
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Login />
+          </Route>
+          <Route exact path="/compte-creation">
+            <CreateLogin />
+          </Route>
+          <Route exact path="/stock">
+            <ProductList />
+          </Route>
+          <Route exact path="/stock/:id" component={ProductDetails} />
+          <Route exact path="/stock/search/:query" component={ProductSearch} />
+        </Switch>
+        <Route exact path="/creation-produit">
+          <ProductCreate />
+        </Route>
+      </Router>
     </div>
   );
 }
